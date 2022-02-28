@@ -110,12 +110,12 @@ img{
     flex-wrap: wrap;
 }
 #featured div.posts ul li{
-	width: 46%;
+	width: 49%;
     border: 2px solid #e5e5e5;
-	display: flex;
+    display: flex;
     justify-content: space-between;
-	margin-bottom: 4%;
-	transition: all 0.3s ease-in-out 0s;
+    margin-bottom: 2%;
+    transition: all 0.3s ease-in-out 0s;
 }
 #featured div.posts ul li:hover{
 	box-shadow:rgb(17 12 46 / 15%) 0px 48px 100px 0px ;
@@ -147,7 +147,6 @@ img{
 }
 #featured div.posts ul li div.description div.person{
 	display: flex;
-    justify-content: space-between;
 	align-items: center;
 }
 #featured div.posts ul li div.description div.person div.avatar{
@@ -155,6 +154,7 @@ img{
     border-radius: 50%;
     overflow: hidden;
     height: 65px;
+	margin-right: 15px;
 }
 #featured div.posts ul li div.description div.person div.name{
     width: 65%;
@@ -182,8 +182,8 @@ img{
 	display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin: 0 auto 5%;
+	width: 100%;
+    margin: 0 auto 7%;
 	border: 1px solid #bfbfbf;
     border-radius: 15px;
     padding: 3%;
@@ -221,15 +221,13 @@ img{
 	flex-wrap: wrap;
 }
 #featured div.filters div.category ul.categories li{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	border: 2px solid #414141;
 	border-radius: 15px;
 	padding: 2% 4%;
 	margin: 0 10px 10px auto;
 	color: #5794e6;
 	cursor: pointer;
+	transition: all 0.3s ease-in-out 0s;
 }
 #featured div.filters div.category ul.categories li:hover{
 	border: 2px solid #5794e6;
@@ -240,13 +238,14 @@ img{
 #featured div.filters div.category ul.categories li:hover p{
 	color : #5794e6;
 }
-#featured div.filters div.category ul.categories li div.tick{
+#featured div.filters div.category ul.categories li input{
     width: 20px;
-	margin-right: 7px;
+	cursor: pointer;
 }
-#featured div.filters div.category ul.categories li p.name{
+#featured div.filters div.category ul.categories li label{
     font-size: 17px;
     font-weight: 700;
+	cursor: pointer;
 }
 #featured div.filters div.sort{
 	margin-bottom: 8%;
@@ -288,13 +287,15 @@ img{
     padding: 2%;
 	align-items: center;
 }
-#featured div.pagination div{
+#featured div.pagination a{
     width: 30px;
 	cursor: pointer;
+	text-align: center;
 }
-#featured ul.pagination div.arrow{
+#featured ul.pagination a.arrow{
 	width: 15px;
 }
+
 
 @media all and (max-width: 1280px){
 	#featured div.posts h4{
