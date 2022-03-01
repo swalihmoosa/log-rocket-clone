@@ -343,6 +343,8 @@ img{
 	display: flex;
     align-items: center;
 	margin-bottom: 3%;
+	justify-content: space-between;
+    padding-right: 3%;
 }
 #posts div.head h1{
 	width: 50%;
@@ -354,14 +356,13 @@ img{
     text-align: left;
     display: block;
 }
-#posts div.head div.hamburger-dot{
+#posts div.head div#hamburger-dot{
 	width: 50px;
 }
 #posts ul.lists{
 	display: flex;
 	align-items: center;
 	border-bottom: 1px solid #d2d2d2 ;
-	margin-bottom: 5%;
 }
 #posts ul.lists li{
 	padding-bottom: 1%;
@@ -392,36 +393,56 @@ img{
 	display: flex;
     justify-content: space-between;
     align-items: center;
+	padding: 5% 0;
 }
 #posts ul.posts li.post div.description{
-
+	width: 70%;
 }
 #posts ul.posts li.post div.description p.date{
 	font-size: 18px;
     margin-bottom: 2%;
     font-weight: 600;
-    color: #d2d2d2;
+    color: #adacac;
 }
 #posts ul.posts li.post div.description h5.post-head{
-
+    font-size: 28px;
+    font-weight: 700;
+    color: #191919;
+    margin-bottom: 2%;
 }
 #posts ul.posts li.post div.description p.post-description{
-
+	font-size: 20px;
+	color: #adacac;
+	margin-bottom: 3%;
 }
 #posts ul.posts li.post div.description div.post-bottom{
-
+	display: flex;
+    align-items: center;
 }
-#posts ul.posts li.post div.description div.post-bottom p.subhead{
-
+#posts ul.posts li.post div.description div.post-bottom a.subhead{
+	width: 10%;
+    text-align: center;
+    background: #adacac;
+    color: #565656;
+    font-size: 18px;
+    font-weight: 600;
+	border-radius: 20px;
+    padding: 10px;
+    margin-right: 25px;
 }
 #posts ul.posts li.post div.description div.post-bottom p.time{
-
+	width: 10%;
+    color: #adacac;
+    font-size: 18px;
+    font-weight: 600;
 }
 #posts ul.posts li.post div.description div.post-bottom div.more-icon{
-
+	width: 50px;
+    margin-left: auto;
 }
 #posts ul.posts li.post div.image{
-
+	width: 200px;
+	height: 200px;
 }
 
 

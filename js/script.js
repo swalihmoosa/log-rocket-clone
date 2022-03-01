@@ -16,4 +16,5 @@ window.addEventListener("load",()=>{
         menu.classList.remove('active')
         overlay.classList.remove('active')
     }
+
 })
