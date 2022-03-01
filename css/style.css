@@ -316,12 +316,77 @@ img{
 }
 
 @media all and (max-width: 980px){
+	#featured{
+		padding: 5% 0;
+	}
+	#featured div.posts h4{
+		width: 23%;
+		margin-bottom: 5%;
+	}
+	#featured div.posts ul li{
+		width: 100%;
+		margin-bottom: 4%;
+	}
+	#featured div.posts ul li:nth-last-child(-n+2){
+		margin-bottom: 4%;
+	}
+	#featured div.posts ul li:last-child{
+		margin-bottom: 0;
+	}
+	#featured div.pagination{
+		width: 48%;
+	}
+	#featured div.pagination a.arrow{
+		width: 17px;
+	}
 }
 @media all and (max-width: 768px){
+	#featured div.posts h4{
+		width: 28%;
+	}
+	#featured div.pagination {
+		width: 55%;
+		padding-top: 4%;
+	}
 }
 @media all and (max-width: 640px){
+	#featured div.posts h4 {
+		width: 37%;
+	}
+	#featured div.posts ul li{
+		flex-wrap: wrap;
+		margin-bottom: 6%;
+	}
+	#featured div.posts ul li div.image{
+		width: 100%;
+		height: 200px;
+		margin-bottom: 4%;
+	}
+	#featured div.posts ul li div.description {
+		padding: 5%;
+		width: 100%;
+	}
+	#featured div.pagination{
+		width: 66%;
+	}
 }
 @media all and (max-width: 480px){
+	#featured div.posts h4 {
+		width: 50%;
+		margin-bottom: 10%;
+	}
+	#featured div.pagination{
+		width: 80%;
+	}
+	#featured div.pagination a.arrow{
+		width: 15px;
+	}
 }
 @media all and (max-width: 360px){
+	#featured div.posts h4{
+		width: 57%;
+	}
+	#featured div.pagination {
+		width: 90%;
+	}
 }
