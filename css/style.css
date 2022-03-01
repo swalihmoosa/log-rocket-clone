@@ -329,13 +329,40 @@ img{
 	width: 15px;
 }
 
-
+#posts header#hamburger-header{
+	background: #c4e2ff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+    top: 0;
+    left: 0;
+	padding: 3% 5%;
+}
+#posts header#hamburger-header h1.logo{
+	
+}
+#posts header#hamburger-header h1.logo a{
+	
+}
+#posts header#hamburger-header ul.nav{
+	display: flex;
+    justify-content: space-between;
+}
+#posts header#hamburger-header ul.nav li{
+	
+}
+#posts header#hamburger-header ul.nav li a{
+	
+}
 #posts{
 	padding: 5% 0;
 	width: 90%;
 	margin: 0 auto;
 	border-left: 2px solid #d2d2d2;
 	border-right: 2px solid #d2d2d2;
+	position: relative;
 }
 #posts .wrapper{
 }
