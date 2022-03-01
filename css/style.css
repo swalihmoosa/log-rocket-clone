@@ -84,6 +84,7 @@ img{
 #featured{
 	padding: 2% 0;
 	background: #f0f0f0;
+	position: relative;
 }
 #featured section.wrapper{
 	display: flex;
@@ -94,14 +95,22 @@ img{
 #featured div.posts{
 	width: 75%;
 }
-#featured div.posts h4{
+#featured div.posts div.head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin-bottom: 3%;
+}
+#featured div.posts div.head h4{
 	font-size: 24px;
     font-weight: 600;
     padding-bottom: 1%;
     border-bottom: 1px solid;
     border-bottom: 1px solid #00000070;
-    margin-bottom: 3%;
     width: 15%;
+}
+#featured div.posts div.head div#hamburger-icon{
+	display: none;
 }
 #featured div.posts ul{
 	width: 100%;
@@ -298,14 +307,15 @@ img{
 
 
 @media all and (max-width: 1280px){
-	#featured div.posts h4{
+	#featured div.posts div.head h4{
 		width: 18%;
+	}
+	#featured div.posts div.head div#hamburger-icon{
+		display: block;
+		width: 40px;
 	}
 	#featured div.posts{
 		width: 100%;
-	}
-	#featured div.filters{
-		display: none;
 	}
 	#featured div.pagination{
 		width: 40%;
@@ -313,15 +323,30 @@ img{
 	#featured div.pagination a.arrow{
 		width: 20px;
 	}
+	#featured div.filters{
+		position: fixed;
+		transform: scale(0);
+	}
+	#featured div.filters.active{
+		transform: scale(1);
+		background: #fff;
+		width: 38%;
+		padding: 5% 2%;
+		top: 0;
+		right: 0;
+		transition: all 0.3s ease-in-out 0s;	
+	}
 }
 
 @media all and (max-width: 980px){
 	#featured{
 		padding: 5% 0;
 	}
-	#featured div.posts h4{
-		width: 23%;
+	#featured div.posts div.head{
 		margin-bottom: 5%;
+	}
+	#featured div.posts div.head h4{
+		width: 23%;
 	}
 	#featured div.posts ul li{
 		width: 100%;
@@ -341,7 +366,7 @@ img{
 	}
 }
 @media all and (max-width: 768px){
-	#featured div.posts h4{
+	#featured div.posts div.head h4{
 		width: 28%;
 	}
 	#featured div.pagination {
@@ -350,8 +375,12 @@ img{
 	}
 }
 @media all and (max-width: 640px){
-	#featured div.posts h4 {
+	#featured div.posts div.head h4 {
 		width: 37%;
+		padding-bottom: 3%;
+	}
+	#featured div.posts div.head div#hamburger-icon{
+		width: 35px;
 	}
 	#featured div.posts ul li{
 		flex-wrap: wrap;
@@ -371,9 +400,11 @@ img{
 	}
 }
 @media all and (max-width: 480px){
-	#featured div.posts h4 {
-		width: 50%;
+	#featured div.posts div.head{
 		margin-bottom: 10%;
+	}
+	#featured div.posts div.head h4 {
+		width: 50%;
 	}
 	#featured div.pagination{
 		width: 80%;
@@ -383,7 +414,7 @@ img{
 	}
 }
 @media all and (max-width: 360px){
-	#featured div.posts h4{
+	#featured div.posts div.head h4{
 		width: 57%;
 	}
 	#featured div.pagination {
