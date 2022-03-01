@@ -334,8 +334,8 @@ img{
     height: 40px;
     position: fixed;
     transition: all 0.3s ease-in-out 0s;
-    top: 28%;
-    background: #acd2f5;
+    top: 20%;
+    background: #c4e2ff;
     border-radius: 50%;
     overflow: hidden;
     padding: 5px;
@@ -372,7 +372,7 @@ img{
 	width: 100%;
     top: 0;
     left: 0;
-	padding: 3% 5%;
+    padding: 1.5% 5%;
     transform: rotate(-90deg);
 	/* display: none; */
     transform-origin: top right;
