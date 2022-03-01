@@ -299,18 +299,22 @@ img{
 
 @media all and (max-width: 1280px){
 	#featured div.posts h4{
-		width: 20%;
+		width: 18%;
 	}
-	#featured div.posts ul li{
+	#featured div.posts{
 		width: 100%;
 	}
-	#featured div.posts ul li:nth-last-child(-n+2) {
-		margin-bottom: 4%;
+	#featured div.filters{
+		display: none;
 	}
-	#featured div.posts ul li:last-child{
-		margin-bottom: 0;
+	#featured div.pagination{
+		width: 40%;
+	}
+	#featured div.pagination a.arrow{
+		width: 20px;
 	}
 }
+
 @media all and (max-width: 980px){
 }
 @media all and (max-width: 768px){
