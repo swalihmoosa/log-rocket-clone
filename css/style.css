@@ -328,7 +328,41 @@ img{
 #featured ul.pagination a.arrow{
 	width: 15px;
 }
-
+#posts div#hamburger-close{
+    right: 6%;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    transition: all 0.3s ease-in-out 0s;
+    top: 28%;
+    background: #acd2f5;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+	transform: scale(0);
+	cursor: pointer;
+	z-index: 2;
+}
+#posts div#hamburger-close.active{
+    transition: all 0.3s ease-in-out 0s;
+	transform: scale(1);
+}
+#posts div#hamburger-overlay{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+	background: rgba(0, 0, 0, .5);
+	backdrop-filter: blur(4px);
+	top: 0;
+	left: 0;
+    transition: all 0.3s ease-in-out 0s;
+	transform: scale(0);
+}
+#posts div#hamburger-overlay.active{
+    transition: all 0.3s ease-in-out 0s;
+	transform: scale(1);
+}
 #posts header#hamburger-header{
 	background: #c4e2ff;
 	display: flex;
@@ -339,22 +373,51 @@ img{
     top: 0;
     left: 0;
 	padding: 3% 5%;
+    transform: rotate(-90deg);
+	/* display: none; */
+    transform-origin: top right;
+	transition: all 0.3s ease-in-out 0s;
+	z-index: 2;
+}
+#posts header#hamburger-header.active{
+    transform: rotate(0deg);
+	/* display: flex; */
+	transition: all 0.3s ease-in-out 0s;
 }
 #posts header#hamburger-header h1.logo{
-	
+	width: 60px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 #posts header#hamburger-header h1.logo a{
-	
+	display: block;
+	width: 100%;
 }
 #posts header#hamburger-header ul.nav{
 	display: flex;
     justify-content: space-between;
+	align-items: center;
+	width: 40%;
 }
 #posts header#hamburger-header ul.nav li{
-	
+	width: 18%;
+	text-align: center;
 }
 #posts header#hamburger-header ul.nav li a{
-	
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #191919;
+    font-size: 19px;
+    font-weight: 600;
+}
+#posts header#hamburger-header ul.nav li:last-child{
+	background: #191919;
+	padding: 2%;
+	border-radius: 15px;
+}
+#posts header#hamburger-header ul.nav li:last-child a{
+	color: #fff;
 }
 #posts{
 	padding: 5% 0;
@@ -385,6 +448,7 @@ img{
 }
 #posts div.head div#hamburger-dot{
 	width: 50px;
+	cursor: pointer;
 }
 #posts ul.lists{
 	display: flex;
