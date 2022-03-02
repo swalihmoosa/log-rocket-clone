@@ -579,6 +579,18 @@ img{
 		padding: 3%;
 		transition: all 0.3s ease-in-out 0s;	
 	}
+	#posts ul.posts li.post div.description p.date{
+		margin-bottom: 4%;
+	}
+	#posts ul.posts li.post div.description h5.post-head{
+		margin-bottom: 4%;
+	}
+	#posts ul.posts li.post div.description div.post-bottom a.subhead{
+		width: 20%;
+	}
+	#posts ul.posts li.post div.description div.post-bottom p.time{
+		width: 20%;
+	}
 }
 
 @media all and (max-width: 980px){
@@ -614,6 +626,28 @@ img{
 	#featured div.filters.active div#close{
 		width: 50px;
 		height: 50px;
+	}
+	#posts div.head h1{
+		width: 60%;
+	}
+	#posts div.head h1 a{
+		font-size: 40px;
+	}
+	#posts div.head{
+		margin-bottom: 6%;
+	}
+	#posts ul.posts li.post{
+		flex-wrap: wrap-reverse;
+		padding: 7% 0;
+	}
+	#posts ul.posts li.post div.image{
+		width: 50%;
+		margin: 0 auto 5%;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	#posts ul.posts li.post div.description{
+		width: 100%;
 	}
 }
 @media all and (max-width: 768px){
