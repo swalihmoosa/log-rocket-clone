@@ -400,7 +400,7 @@ img{
 	width: 40%;
 }
 #posts header#hamburger-header ul.nav li{
-	width: 18%;
+	/* width: 18%; */
 	text-align: center;
 }
 #posts header#hamburger-header ul.nav li a{
@@ -591,6 +591,15 @@ img{
 	#posts ul.posts li.post div.description div.post-bottom p.time{
 		width: 20%;
 	}
+	#posts header#hamburger-header{
+		padding: 2.5% 5%;
+	}
+	#posts header#hamburger-header h1.logo{
+		width: 50px;
+	}
+	#posts header#hamburger-header ul.nav{
+		width: 60%;
+	}
 }
 
 @media all and (max-width: 980px){
@@ -649,6 +658,12 @@ img{
 	#posts ul.posts li.post div.description{
 		width: 100%;
 	}
+	#posts header#hamburger-header ul.nav {
+		width: 60%;
+	}
+	#posts header#hamburger-header ul.nav li a{
+		font-size: 16px;
+	}
 }
 @media all and (max-width: 768px){
 	#featured div.posts div.head h4{
@@ -663,6 +678,9 @@ img{
 	}
 	#posts{
 		padding: 10% 3% 3%;
+	}
+	#posts header#hamburger-header ul.nav {
+		width: 70%;
 	}
 }
 @media all and (max-width: 640px){
@@ -723,6 +741,12 @@ img{
 	}
 	#posts ul.posts li.post div.description div.post-bottom div.more-icon {
 		width: 35px;
+	}
+	#posts header#hamburger-header ul.nav {
+		width: 80%;
+	}
+	#posts header#hamburger-header ul.nav li a{
+		font-size: 14px;
 	}			
 }
 @media all and (max-width: 480px){
@@ -769,6 +793,29 @@ img{
 	}
 	#posts ul.posts li.post div.description div.post-bottom div.more-icon {
 		width: 30px;
+	}
+	#posts header#hamburger-header.active{
+		flex-direction: column;
+		padding: 5.5% 5%;
+	}
+	#posts header#hamburger-header ul.nav{
+		flex-direction: column;
+	}
+	#posts header#hamburger-header h1.logo {
+		margin-bottom: 10%;
+	}
+	#posts header#hamburger-header ul.nav li{
+		margin-bottom: 5%;
+		width: 50%;
+	}
+	#posts header#hamburger-header ul.nav li:last-child{
+		margin-bottom: 0;
+	}
+	#posts header#hamburger-header ul.nav li a{
+		font-size: 16px;
+	}
+	#posts header#hamburger-header ul.nav li:last-child{
+		padding: 3%;
 	}			
 }
 @media all and (max-width: 360px){
