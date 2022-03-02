@@ -628,7 +628,7 @@ img{
 		height: 50px;
 	}
 	#posts div.head h1{
-		width: 60%;
+		width: 65%;
 	}
 	#posts div.head h1 a{
 		font-size: 40px;
@@ -661,6 +661,9 @@ img{
 	#featured div.filters.active{
 		width: 55%;
 	}
+	#posts{
+		padding: 10% 3% 3%;
+	}
 }
 @media all and (max-width: 640px){
 	#featured div.posts div.head h4 {
@@ -689,6 +692,38 @@ img{
 	#featured div.filters.active{
 		width: 68%;
 	}
+	#posts div.head h1 a{
+		font-size: 30px;
+	}
+	#posts div.head div#hamburger-dot{
+		width: 40px;
+	}
+	#posts div.head{
+		margin-bottom: 10%;
+	}
+	#posts ul.lists li{
+		width: 20%;
+	}
+	#posts ul.posts li.post div.image {
+		width: 70%;
+		margin: 0 auto 10%;
+	}
+	#posts ul.posts li.post div.description h5.post-head {
+		font-size: 25px;
+	}
+	#posts ul.posts li.post div.description p.post-description {
+		font-size: 18px;
+		margin-bottom: 7%;
+	}
+	#posts ul.posts li.post div.description div.post-bottom a.subhead {
+		width: 30%;
+	}
+	#posts ul.posts li.post div.description div.post-bottom p.time {
+		width: 25%;
+	}
+	#posts ul.posts li.post div.description div.post-bottom div.more-icon {
+		width: 35px;
+	}			
 }
 @media all and (max-width: 480px){
 	#featured div.posts div.head{
@@ -706,6 +741,35 @@ img{
 	#featured div.filters.active{
 		width: 80%;
 	}
+	#posts div.head h1 a{
+		font-size: 23px;
+	}
+	#posts div.head div#hamburger-dot {
+		width: 30px;
+	}
+	#posts ul.lists li a {
+		font-size: 17px;
+	}
+	#posts ul.posts li.post div.image {
+		width: 90%;
+	}
+	#posts ul.posts li.post div.description h5.post-head {
+		font-size: 20px;
+	}
+	#posts ul.posts li.post div.description p.post-description {
+		font-size: 16px;
+	}
+	#posts ul.posts li.post div.description div.post-bottom a.subhead {
+		font-size: 16px;
+		width: 35%;
+	}
+	#posts ul.posts li.post div.description div.post-bottom p.time {
+		width: 30%;
+		font-size: 16px;
+	}
+	#posts ul.posts li.post div.description div.post-bottom div.more-icon {
+		width: 30px;
+	}			
 }
 @media all and (max-width: 360px){
 	#featured div.posts div.head h4{
@@ -714,4 +778,29 @@ img{
 	#featured div.pagination {
 		width: 90%;
 	}
+	#posts div.head h1 a {
+		font-size: 20px;
+	}
+	#posts div.head div#hamburger-dot {
+		width: 25px;
+	}
+	#posts ul.lists li {
+		width: 28%;
+	}
+	#posts ul.posts li.post div.description h5.post-head {
+		font-size: 18px;
+	}
+	#posts ul.posts li.post div.description p.post-description {
+		font-size: 15px;
+	}
+	#posts ul.posts li.post div.description div.post-bottom a.subhead {
+		font-size: 14px;
+		margin-right: 15px;
+	}
+	#posts ul.posts li.post div.description div.post-bottom p.time {
+		font-size: 14px;
+	}
+	#posts ul.posts li.post {
+		padding: 10% 0;
+	}			
 }
